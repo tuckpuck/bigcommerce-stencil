@@ -9,19 +9,6 @@
 {{/if}}
 <header class="header" role="banner">
   <button type="button" id="addToCart">Add Bundle to Cart</button>
-  <script>
-    // when #addToCart is clicked...
-    $('button#addToCart').click(function() {
-      // add product id 123
-      $.get('/cart.php?action=add&product_id=123');
-
-      // add product id 456
-      $.get('/cart.php?action=add&product_id=456', function(data) {
-        // go to cart
-        window.location = '/cart.php';
-      });
-    });
-  </script>
   <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
     <span class="mobileMenu-toggleIcon">Toggle menu</span>
   </a>
